@@ -1,0 +1,15 @@
+{
+  "name": "ecommerceproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {"homepage" : "npx playwright test --grep @HomePage"},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  }
+}
