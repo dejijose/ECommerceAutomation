@@ -8,7 +8,7 @@ export const test = base.extend({
     await page.getByPlaceholder('Password').first().fill('SamplePWTest');
     await page.getByRole('button',{name:'Login'}).click();
     await use(page);
-    await page.getbyLabel('Logout').click()
+    await page.getByLabel('Logout').click();
     await page.close();
  },
 
