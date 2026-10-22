@@ -1,5 +1,5 @@
 
-export class productPage{
+export class ProductPage{
 constructor(page){
     this.page = page;
     this.searchProduct = page.getByPlaceholder('Search Product');

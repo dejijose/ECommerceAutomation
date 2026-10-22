@@ -1,5 +1,11 @@
 export class apiUtil{
 
+async createAccount(request, accountData) {
+    return request.post('https://automationexercise.com/api/createAccount', {
+        form: accountData,
+    });
+}
+
 async addToCart(request,token ) {   
 const response = await request.get('https://automationexercise.com/add_to_cart/1',
         {Headers: {'content-type': 'text/html',

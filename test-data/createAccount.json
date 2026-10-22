@@ -1,0 +1,19 @@
+{
+  "name": "Sample Test User",
+  "email": "sample-user@example.com",
+  "password": "SamplePassword123!",
+  "title": "Mr",
+  "birth_date": "10",
+  "birth_month": "5",
+  "birth_year": "1995",
+  "firstname": "Sample",
+  "lastname": "User",
+  "company": "Example Company",
+  "address1": "123 Example Street",
+  "address2": "Suite 4",
+  "country": "United States",
+  "zipcode": "12345",
+  "state": "California",
+  "city": "Los Angeles",
+  "mobile_number": "5551234567"
+}

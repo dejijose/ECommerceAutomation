@@ -12,27 +12,27 @@ test.describe('Validate Home page functionalities', {tag: '@HomePage'} , ()=>{
     })
 
     test('validate logo', async () => {
-        const logo =await pageManager.getHomePage().getLogo();
+        const logo =await pageManager.getHomePage.getLogo();
         await expect(logo).toBeVisible();
         await expect(logo).toBeEnabled();
         
     })
 
     test('validate ad slider on home page', async () => {
-        expect(await pageManager.getHomePage().getAdCount()).toBe(3);
+        expect(await pageManager.getHomePage.getAdCount()).toBe(3);
         
     })
 
     test('verify feature items visible on page', async () => {
-        await expect(await pageManager.getHomePage().getFeatures()).toHaveText('Features Items');
-        expect(await pageManager.getHomePage().getitemsCount()).toBe(34);
+        await expect(await pageManager.getHomePage.getFeatures()).toHaveText('Features Items');
+        expect(await pageManager.getHomePage.getitemsCount()).toBe(34);
         
     })
 
     for( const data of products.products){
 
     test(`verify products on page ${data}`, async () => {
-        const product = await pageManager.getHomePage().getProductName(data);
+        const product = await pageManager.getHomePage.getProductName(data);
         console.log(await product.count())
         await expect(product).toBeVisible();
         

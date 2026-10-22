@@ -1,4 +1,4 @@
-export class cartPage{
+export class CartPage{
 constructor(page){
     this.page = page;
     this.cartproducts = page.locator('tbody>tr');

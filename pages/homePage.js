@@ -1,4 +1,4 @@
-export class homePage{
+export class HomePage{
 
     constructor(page){
         this.page = page;
@@ -23,7 +23,7 @@ export class homePage{
         return this.ads.count();
     }
 
-     async getLogo(){
+     getLogo(){
         return this.logo;
     }
 

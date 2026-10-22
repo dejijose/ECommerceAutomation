@@ -1,6 +1,5 @@
 import { test as base } from '@playwright/test';
-import { homePage } from '../pages/homePage';
-import { cartPage } from '../pages/cartPage';
+
 
 export const test = base.extend({
  loggedInPage: async({page}, use)=>{
