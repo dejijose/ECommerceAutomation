@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"homepage" : "npx playwright test --grep @HomePage",
-"productpage" : "npx playwright test --grep @products",
-"signuppage" : "npx playwright test --grep @signup"},
+  "scripts": {
+    "homepage": "npx playwright test --grep @HomePage",
+    "productpage": "npx playwright test --grep @products",
+    "signuppage": "npx playwright test --grep @signup"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
     "@playwright/test": "^1.64.0",
-    "@types/node": "^26.6.5"
+    "@types/node": "^26.6.5",
+    "dotenv": "^18.0.8"
   }
 }

@@ -3,12 +3,12 @@ import { test as base } from '@playwright/test';
 
 export const test = base.extend({
  loggedInPage: async({page}, use)=>{
-    await page.goto('https://automationexercise.com/login'); //SamplePWTest@example.com
-    await page.getByPlaceholder('Email Address').first().fill('SamplePWTest@example.com');
-    await page.getByPlaceholder('Password').first().fill('SamplePWTest');
+    await page.goto('https://automationexercise.com/login'); 
+    await page.getByPlaceholder('Email Address').first().fill(process.env.TEST_EMAIL);
+    await page.getByPlaceholder('Password').first().fill(process.env.TEST_PASSWORD);
     await page.getByRole('button',{name:'Login'}).click();
     await use(page);
-    await page.getByLabel('Logout').click();
+    await page.locator("//a[@href='/logout']").click();
     await page.close();
  },
 

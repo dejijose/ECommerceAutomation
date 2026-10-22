@@ -5,6 +5,9 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
+  env:
+    TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+    TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
