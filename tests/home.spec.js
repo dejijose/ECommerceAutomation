@@ -23,7 +23,7 @@ test.describe('Validate Home page functionalities', {tag: '@HomePage'} , ()=>{
         
     })
 
-    test('verify feature items visible on page', async () => {
+    test('@smoke verify feature items visible on page', async () => {
         await expect(await pageManager.getHomePage.getFeatures()).toHaveText('Features Items');
         expect(await pageManager.getHomePage.getitemsCount()).toBe(34);
         
