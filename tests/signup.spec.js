@@ -1,16 +1,13 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../utils/customFixture';
 import accountData from '../test-data/createAccount.json' assert { type: 'json' };
-import { PageManager } from '../pages/pageManager';
 
-let pageManager;
 
 test.describe('Create account API', { tag: '@signup' }, () => {
   test.beforeEach(async ({ page }) => {
-    pageManager = new PageManager(page);
    
   });
 
-  test('creates an account with a POST request', async ({ request }) => {
+  test('creates an account with a POST request', async ({pageManager, request}) => {
     const requestBody = {
       ...accountData,
       email: `signup-${Date.now()}@example.com`,

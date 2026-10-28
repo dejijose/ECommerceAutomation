@@ -7,7 +7,8 @@
     "homepage": "npx playwright test --grep @HomePage",
     "productpage": "npx playwright test --grep @products",
     "signuppage": "npx playwright test --grep @signup",
-    "smoke": "npx playwright test --grep @smoke"
+    "smoke": "npx playwright test --grep @smoke",
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",

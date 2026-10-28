@@ -8,6 +8,7 @@ constructor(page){
     this.categoryWomen = page.getByRole('link', {name:'Women'}).first();
     this.categoryMen = page.getByRole('link', {name:'Men'}).first();
      this.categoryKids = page.getByRole('link', {name:'Kids'}).first();
+     this.adClose = page.locator('.continue-prompt-text').last();
 }
 
    async inputSearchProduct(input){
@@ -27,6 +28,10 @@ constructor(page){
     }
      async clickCategoryKids(){
         await this.categoryKids.click();
+    }
+
+    async adClose(){
+        return this.adClose;
     }
 
 }
